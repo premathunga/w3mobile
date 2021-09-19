@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>Ahamu - free online radio streaming </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/w3.css">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<style>
+body {
+    color: #fff;
+}
+/* h2 {
+    color: #000;
+} */
+h3 {
+    color: #fff;
+}
+p {
+  color: #F51328;
+}
+
+.header {
+  overflow: hidden;
+  position: fixed;}
+</style>
+<body style="background-color: rgb(20, 20, 20)">
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-red" style="width:75%;display:none;z-index:2" id="mySidebar">
+<div class="w3-container w3-theme-d2 w3-dark-grey">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <img src="img/icon.png" alt="Ahamu - free online radio streaming" style="width:75%">
+    <h2>w3mobile</h2>
+  </div>
+</div>
+<a class="w3-bar-item w3-button" href="info.html">info</a>
+</nav>
+
+<header class="w3-bar w3-card w3-pink">
+  <button class="w3-bar-item w3-button w3-xlarge" onclick="openSidebar()">&#9776;</button>
+  <h5 class="w3-bar-item">w3mobile</h5>
+</header>
+
+<div class="w3-card-4" style="width:100%">
+        <img src="img/wall.gif" alt="Norway" style="width:100%">
+        <div class="w3-container w3-center">
+          <p>wellcome to w3css</p>
+        </div>
+      </div>
+    </div>
+
+<div class="w3-card-4" style="width:100%" >
+
+
+  <div class="city w3-animate-right">
+    
+    <ul class="w3-ul w3-card-4" style="width:100%">
+      <li class="w3-bar">
+            <a href="yfm.html" class="w3-button w3-pink w3-right w3-bar- w3-center w3-round-xxlarge">Play</a>
+            <img src="img/yfm.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:25%">
+            <div class="w3-bar-item">
+              <span class="w3-large">Y FM</span><br>
+              <span>(fm 96.2)</span>
+            </div>
+        </li>
+       </ul>
+  </div>
+</div>
+
+</div>
+
+<script>
+function openLink(evt, animName, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace("", "");
+  }
+  document.getElementById(animName).style.display = "block";
+  evt.currentTarget.className += "";
+}
+</script>
+
+<!--tabs end-->
+
+
+<script>
+closeSidebar();
+function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+
+<!-- <script>
+  var admobid = {};
+  if( /(android)/i.test(navigator.userAgent) ) { 
+      admobid = { // for Android
+          banner: 'ca-app-pub-6470990737823394/3558927057',
+          // banner: 'ca-app-pub-3940256099942544/6300978111',
+          interstitial: ''
+      };
+  }
+  
+  function initApp() {
+      if (AdMob) {
+          AdMob.createBanner({
+              adId : admobid.banner,
+              position : AdMob.AD_POSITION.BOTTOM_CENTER,
+              autoShow : true
+          });
+      }
+  }
+  
+  document.addEventListener('deviceready', initApp, false);
+  </script> -->
+
+  </html>

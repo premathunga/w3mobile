@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <title>Ahamu - free online radio streaming </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/w3.css">
+<style>
+body {
+    color: #fff;
+}
+h3 {
+    color: #fff;
+}
+p {
+  color: #F51328;
+}
+</style>
+<body style="background-color: rgb(20, 20, 20)" >
+
+    <audio id="yfm">
+    <source src="http://198.38.92.217:1150/;stream1472803644663/1/;?type=http&nocache=0" type="audio/ogg">
+    <source src="http://198.38.92.217:1150/;stream1472803644663/1/;?type=http&nocache=0" type="audio/mpeg">
+    Your phone does not support the audio.
+    </audio>
+
+
+  <div class="w3-center" onclick="pauseAudio()"><br>
+    <a href="index.html" class="w3-button w3-large w3-pink w3-display-topright">&times;</a>
+  </div>
+
+<center>
+    <div class="w3-center w3-padding w3-display-middle">
+        <img src="img/yfm.jpg" alt="Avatar" style="width:80%" class="w3-margin-top">
+            <h3><b>YES FM</b></h3>
+            <p>www.yf.com</p>
+                <button class="w3-button  w3-pink w3-section w3-padding w3-round-xxlarge" onclick="playAudio()" >&nbsp;Play&nbsp;</button></span><br>
+                <button class="w3-button  w3-pink w3-section w3-padding w3-round-xxlarge" onclick="pauseAudio()" >Pause</button>
+    </div>
+
+<script>
+    var x = document.getElementById("yfm"); 
+    
+    function playAudio() { 
+        x.play(); 
+    } 
+    
+    function pauseAudio() { 
+        x.pause(); 
+    } 
+    </script>
+</div>
+
+
+        
+        </body>
