@@ -46,18 +46,40 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/premathunga/w3mobile.git
    ```
-3. Install NPM packages
+2. path
    ```sh
-   npm install
+   cd w3mobile
    ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
+3. Clone the repo
+   ```sh
+   cordova create hello com.example.hello HelloWorld
+   ```
+4. Delete www folder and copy w3mobile www folder
+   ```sh
+   hello/
+   -www
+   config.xml
+   ```
+5. Clone the repo
+   ```sh
+    cordova platform add ios
+    cordova platform add android
+   ```
+
+6. Clone the repo
+   ```sh
+    cordova build add ios
+    cordova build add android
+   ```
+
+7. run කරන්න කලින්, ඇන්ඩ්‍රොයිඩි පොන් එක pc එකට කනෙක්ට් කරලා ඉන්න
+   ```sh
+    cordova run add ios
+    cordova run add android
    ```
 
 
